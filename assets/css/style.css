@@ -92,5 +92,5 @@ body{
     background-color: var(--zoom-primary-light);
     height: 100%;
     padding: 1rem;
-    border-style: none;
+    border: none;
 }
