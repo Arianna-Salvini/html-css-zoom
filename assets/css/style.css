@@ -16,15 +16,10 @@
 
 body{
     background-color: var(--zoom-dark);
-    overflow: hidden;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.navigation_bar{
-    background-color: #4bc800;
-    width: 100%;
-    height: 11vh;
-    margin-top: 1rem;
-}
+
 /* #endregion /Commons */
 
 /*  #region Utility */
@@ -33,7 +28,6 @@ body{
     height: 89vh;
     margin: auto;
     margin-top: 2.5rem;
-    background-color: #e51b32;
 }
 
 /*  #region Utility */
@@ -50,12 +44,53 @@ body{
 }
 
 .column-7{
-    width: calc((100%/12) *2);
-    background-color: rebeccapurple;
-    padding: 0.5rem;
+    width: calc((100%/14) *2);
+    padding: 0.3rem 0.15rem;
 }
-.card_screen{
-background-color: aliceblue;
+
+
+.screen_image{
+    width: 100%;
 }
 /* #endregion /Main*/
 
+/* Navigation bar */
+
+.navigation_bar{
+    background-color: var(--zoom-primary-dark);
+    color: var(--zoom-light);
+    width: 100%;
+    height: 11vh;
+    margin-top: 2rem;
+}
+
+
+.icon_name{
+    font-size: 0.7rem;
+}
+
+.icon{
+    padding: 0.4rem;
+    text-align: center;
+}
+
+.fa-angle-up {
+    align-self: center;
+    font-size: 0.6rem;
+    padding: 0.3rem;
+}
+
+.green{
+    color: var(--zoom-success);
+}
+.room{
+    width: 16px;
+}
+
+.end_meeting{
+    color: var(--zoom-danger);
+    background-color: var(--zoom-primary-light);
+    height: 100%;
+    padding: 1rem;
+    border-style: none;
+}
