@@ -60,7 +60,7 @@ body{
     background-color: var(--zoom-primary-dark);
     color: var(--zoom-light);
     width: 100%;
-    height: 11vh;
+    height: 50px;
     margin-top: 2rem;
 }
 
