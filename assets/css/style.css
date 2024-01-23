@@ -1,0 +1,22 @@
+/* #region Commons */
+:root{
+    --zoom-dark:#000000;
+    --zoom-light:#ffffff;
+    --zoom-primary-dark:#222222;
+    --zoom-primary-light:#4a4a4a;
+    --zoom-success:#4bc800;
+    --zoom-danger:#e51b32;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--zoom-dark);
+}
+/* #endregion Commons */
+/* #region Utility */
+/* #endregion Utility */
