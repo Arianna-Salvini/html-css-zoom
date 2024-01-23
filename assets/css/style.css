@@ -36,6 +36,10 @@ body{
     justify-content: space-between;
     align-items: center;
 }
+
+.icon_name{
+    font-size: 0.7rem;
+}
 /*  #endregion /Utility */
 
 /* #region Main*/
@@ -53,6 +57,34 @@ body{
 .screen_image{
     width: 100%;
 }
+
+.top_right_badge{
+    color: var(--zoom-light);
+    display: flex;
+    justify-content: flex-end;
+}
+
+.speaker_view{
+    margin: 0.3rem;
+    background-color: var(--zoom-primary-light);
+    padding: 0 0.3rem 0.3rem;
+    margin-right: 0.3rem;
+    border-radius: 0.3rem;
+    vertical-align: middle;
+}
+
+.fa-grip{
+    vertical-align: middle;
+}
+
+.fa-arrows-up-down-left-right{
+    margin: 0.3rem;
+    background-color: var(--zoom-primary-light);
+    padding: 0.3rem 0.3rem 0.3rem;
+    margin-right: 1rem;
+    border-radius: 0.3rem;
+    vertical-align: middle;
+}
 /* #endregion /Main*/
 
 /* Navigation bar */
@@ -67,10 +99,6 @@ body{
 .navigation{
     background-color: var(--zoom-primary-dark);
     height: 60px;
-}
-
-.icon_name{
-    font-size: 0.7rem;
 }
 
 .icon{
