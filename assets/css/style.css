@@ -17,6 +17,7 @@
 body{
     background-color: var(--zoom-dark);
     font-family: 'Lato', sans-serif;
+    overflow: hidden;
 }
 
 
@@ -24,10 +25,11 @@ body{
 
 /*  #region Utility */
 .container {
-    width: 90%;
-    height: 89vh;
+    width: calc(90% + 2rem);
+    height: calc(100vh - 160px) ;
     margin: auto;
     margin-top: 1.5rem;
+    overflow-y: auto;
 }
 
 .d-flex {
@@ -36,6 +38,10 @@ body{
     align-items: center;
 }
 
+img{
+    max-width: 100%;
+    display: block;
+}
 
 /*  #endregion Utility */
 
@@ -50,24 +56,31 @@ body{
 /*  #endregion /Utility */
 
 /* #region Main*/
+.main {
+    height: calc(100vh - 160px);
+}
 .row {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
 }
 
 .column-7{
-    width: calc((100%/14) *2);
-    padding: 0.3rem 0.15rem;
+    width: 293px;
 }
 
 .screen_image{
     width: 100%;
+    object-fit: contain;
+    object-position: center;
 }
 
 .top_right_badge{
     color: var(--zoom-light);
-    display: flex;
-    justify-content: flex-end;
+    height: 50px;
+    text-align: end;
+    line-height: 50px;
 }
 
 .speaker_view{
@@ -105,6 +118,7 @@ body{
 
 .card_screen{
     position: relative;
+
 }
 
 /* #endregion /Main*/
@@ -120,7 +134,7 @@ body{
 
 .navigation{
     background-color: var(--zoom-primary-dark);
-    height: 60px;
+    height: 89px;
 }
 
 .icon{
@@ -140,8 +154,9 @@ body{
 
 .end_meeting{
     color: var(--zoom-danger);
+    font-size: 1rem;
     background-color: var(--zoom-primary-light);
     height: 100%;
-    padding: 1rem;
-    border: none;
+    padding: 2rem;
+    border: 1px solid var(--zoom-primary-light);
 }
