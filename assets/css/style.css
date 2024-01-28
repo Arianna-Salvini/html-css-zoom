@@ -43,6 +43,20 @@ img{
     display: block;
 }
 
+::-webkit-scrollbar {
+  width: 0.5rem;
+  background-color: var(--zoom-primary-dark);
+}
+::-webkit-scrollbar-track {
+  background: var(--zoom-primary-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  border-bottom: 100vh solid var(--zoom-primary-light);
+  border-radius: 10px;
+
+}
+
 /*  #endregion Utility */
 
 .icon_name{
